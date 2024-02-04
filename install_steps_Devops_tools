@@ -54,6 +54,13 @@ sudo yum update && sudo yum install jfrog-artifactory-oss -y
 
 sudo systemctl start artifactory.service
 
+#-------------------terraform install--------------------------
+
+sudo wget https://releases.hashicorp.com/terraform/1.7.2/terraform_1.7.2_linux_amd64.zip
+sudo unzip terraform_1.7.2_linux_amd64.zip
+sudo mv terraform /usr/local/bin
+
+
 #------------------Docker install-------------
 #sudo amazon-linux-extras install docker #linux 2022
 sudo yum install docker -y #linux 2023
